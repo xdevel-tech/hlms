@@ -7,7 +7,7 @@
             <input type="text" name="user" placeholder="Username" class="form-control"><br>
             <input type="password" name="pass" placeholder="Password" class="form-control"><br>
             <a href="source/singup.php">SING UP</a>
-            <input type="submit" name="btn" value="Sing in" class="btn btn-success">
+            <input type="submit" name="btn" value="Sing up" class="btn btn-success">
         </form>
     </div>
 <?php
