@@ -6,7 +6,7 @@
             <h2>REGISTRATION</h2>
             <input type="text" name="user" placeholder="Username" class="form-control"><br>
             <input type="password" name="pass" placeholder="Password" class="form-control"><br>
-            <input type="text"  name="email" placeholder="E-mail adress" class="form-control"><br>
+            <input type="email"  name="email" placeholder="E-mail adress" class="form-control"><br>
             <input type="submit" name="btn" value="Register" class="btn btn-success">
         </form>
     </div>

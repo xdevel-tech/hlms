@@ -1,12 +1,25 @@
 <?php
-   
+    
+    global $userID;
+
     $btnType = $_POST['btn'];
 
     if ($btnType == 'Register') {
         singUp();
+    } elseif ($btnType == 'add job') {
+        addJob();
     } else {
         singIn();
     }
+
+
+    function addJob() 
+    {
+
+        
+
+    }
+
 
     function singIn()
     {
@@ -20,8 +33,19 @@
         if ($result->num_rows == 0) {
             echo 'login faild';
         } else {
-            echo 'success';
-            //enter to database
+            //echo 'success';
+            while ($row = $result->fetch_row()) {
+                $userID = $row[3];
+                header('location: joblist.php');
+                
+                break;
+            }
+            //for ($i = 0; $i < $size; ++$i ); {
+            //    $row = $result->fetch_row()
+            //}
+
+            
+            //$userID = $result
         }
         
         $mysql->close();
